@@ -33,17 +33,15 @@ async function toggleMode() {
 </script>
 
 <template>
-  <ClientOnly>
-    <div ref="wrapperEl">
-      <UButton
-        :icon="isDark ? 'i-hugeicons-moon-02' : 'i-hugeicons-sun-03'"
-        color="neutral"
-        variant="ghost"
-        class="cursor-pointer"
-        @click="toggleMode"
-      />
-    </div>
-  </ClientOnly>
+  <div ref="wrapperEl">
+    <UButton
+      :icon="isDark ? 'i-hugeicons-moon-02' : 'i-hugeicons-sun-03'"
+      color="neutral"
+      variant="ghost"
+      class="cursor-pointer"
+      @click="toggleMode"
+    />
+  </div>
 </template>
 
 <style>
